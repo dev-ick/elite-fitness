@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "es2022",                          // Updated to modern default (optional but recommended)
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +18,13 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",                              
     "paths": {
-      "@/*": ["./src/*"]
-    }
+          "@/*": ["./src/*"],              
+          "@/components/*": ["./components/*"],  
+          "@/lib/*": ["./lib/*"],          
+          "@/public/*": ["./public/*"]     
+        }
   },
   "include": [
     "next-env.d.ts",
